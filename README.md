@@ -80,20 +80,3 @@ pip install -r requirements.txt
 
 For any inquiries or suggestions, feel free to open an issue or contact the repository owner.
 ```
-
----
-
-### ✅ `requirements.txt`
-
-```txt
-Flask==2.2.5
-numpy==1.24.4
-pandas==2.1.4
-scikit-learn==1.3.2
-tensorflow==2.15.0
-joblib==1.3.2
-```
-
----
-
-Let me know if you also want a `Dockerfile`, `run.sh`, or deployment script for AWS EC2 or Lambda setup!
