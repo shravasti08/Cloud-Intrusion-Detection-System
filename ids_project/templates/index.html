@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intrusion Detection System</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 500px;
+            margin: auto;
+            padding-top: 50px;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Network Intrusion Detection</h2>
+    <form method="POST">
+        <label>Protocol Type:</label>
+        <input type="number" step="any" name="protocol_type" required>
+        <label>Service:</label>
+        <input type="number" step="any" name="service" required>
+        <label>Flag:</label>
+        <input type="number" step="any" name="flag" required>
+        <label>Logged In:</label>
+        <input type="number" step="any" name="logged_in" required>
+        <label>Count:</label>
+        <input type="number" step="any" name="count" required>
+        <label>Same Srv Rate:</label>
+        <input type="number" step="any" name="same_srv_rate" required>
+        <label>Diff Srv Rate:</label>
+        <input type="number" step="any" name="diff_srv_rate" required>
+        <label>Dst Host Srv Count:</label>
+        <input type="number" step="any" name="dst_host_srv_count" required>
+        <label>Dst Host Same Srv Rate:</label>
+        <input type="number" step="any" name="dst_host_same_srv_rate" required>
+        <label>Dst Host Same Src Port Rate:</label>
+        <input type="number" step="any" name="dst_host_same_src_port_rate" required>
+
+        <button type="submit">Detect Intrusion</button>
+    </form>
+
+    {% if result %}
+        <h3>{{ result }}</h3>
+    {% endif %}
+</body>
+</html>
