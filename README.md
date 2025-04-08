@@ -44,7 +44,7 @@ curl -X POST "http://your-api-endpoint/predict" \
 
 ```
 .
-├── arff dataset.csv               # Preprocessed dataset
+├── arff dataset.csv               # dataset
 ├── ids_project/
 │   ├── app.py                     # Flask API for prediction
 │   ├── encoder_model.h5           # Trained encoder model (SCAE)
